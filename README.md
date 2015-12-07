@@ -1,6 +1,6 @@
 # vim-ben-vimrc
 #vimrc
-
+<pre>
 set nocompatible
 set t_Co=256
 set termencoding=utf-8
@@ -246,6 +246,7 @@ colorscheme solarized
 " let g:solarized_menu=1
 
 " NODTREE SETTTING
+
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
@@ -253,3 +254,4 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+<pre>
